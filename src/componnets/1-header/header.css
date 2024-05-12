@@ -1,0 +1,22 @@
+
+
+header ul.flex {
+    gap: 16px;
+}
+
+header ul li a {
+    color: var(--title);
+}
+
+header button{
+    font-size: 1.2rem;
+}
+
+header.flex {
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+header.flex nav{
+    background-color: var(--bgheader);
+}

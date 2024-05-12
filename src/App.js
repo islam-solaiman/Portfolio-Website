@@ -7,11 +7,15 @@ import Footer from "./componnets/5-footer/Footer";
 
 
 function App() {
-  return <div>
+  return <div className="container">
     <Header />
+    <div className="devider"/>
     <Hero />
+    <div className="devider"/>
     <Main />
+    <div className="devider"/>
     <Contact />
+    <div className="devider"/>
     <Footer />
   </div>
 }
