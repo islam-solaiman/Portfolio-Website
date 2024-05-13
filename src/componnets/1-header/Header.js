@@ -5,7 +5,9 @@ import   './header.css'
 export default function Header() {
   return (
     <div>
-      <header className='border flex'>
+      <header className=' flex'>
+        <button className='menu'>Show model</button>
+        <div/>
         <nav>
           <ul className='flex'>
             <li><a href="">About</a></li>
