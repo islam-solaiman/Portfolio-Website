@@ -52,11 +52,12 @@ header .fixed{
 
 @keyframes mymove {
     0%   {scale: 0;}
+    60%   {scale: 1.2;}
     100% {scale: 1;}
   } 
 
 header .fixed ul.model{
-    animation: myMove 5s 1;
+    animation: mymove 0.7s 1;
     width: 85%;
     margin-left: auto;
     margin-right: auto;
