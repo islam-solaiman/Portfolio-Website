@@ -40,6 +40,50 @@ header.flex nav{
     display: none;
 }
 
+
+/** Model pop up **/
+
+header .fixed{
+    position: fixed;
+    inset: 0;
+    z-index: 10;
+    background-color: rgb(40, 40, 48, 0.91);
+}
+
+@keyframes mymove {
+    0%   {scale: 0;}
+    100% {scale: 1;}
+  } 
+
+header .fixed ul.model{
+    animation: myMove 5s 1;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    background-color: var(--secondary);
+
+}
+
+header .fixed ul.model li{
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 0.77rem;
+    padding-top: 0.5rem;
+}
+
+header .fixed ul.model li:last-child{
+    border: none;
+}
+
+header .fixed ul.model li:first-child{
+    text-align: right;
+    border: none;
+    padding-top: 0;
+    padding-bottom: 0.2rem;
+}
+
 @media (max-width: 700px){
     header.flex nav{
         display: none;
