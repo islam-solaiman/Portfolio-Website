@@ -1,4 +1,20 @@
+/* ================
+        Contnts 
+=================== */
+/*
 
+1- Header Desig
+2- Button & icon
+3- Model == pop up
+4- Responsive Design (media query)
+
+*/
+
+
+
+/* ================
+    Header Desig 
+=================== */
 
 header ul.flex {
     gap: 16px;
@@ -41,7 +57,9 @@ header.flex nav{
 }
 
 
-/** Model pop up **/
+/* ================
+   Model == pop up
+=================== */
 
 header .fixed{
     position: fixed;
@@ -83,7 +101,47 @@ header .fixed ul.model li:first-child{
     border: none;
     padding-top: 0;
     padding-bottom: 0.2rem;
+    margin-bottom: -1rem;
 }
+
+/* ================
+   Button & icon
+=================== */
+
+header .icon-menu, header button.mode{
+    background-color: var(--bgheader);
+    height: 2.4rem;
+    width: 2.4rem;
+    border-radius: 50%;
+
+    justify-content: center;
+    text-align: center;
+
+    color: var(--subtitle);
+    border: 1px solid rgb(244, 165, 96, 0.249);
+    transition: 0.2s;
+}
+
+header .icon-menu:hover, header button.mode:hover{
+    color: var(--title);
+    border: 1px solid rgb(244, 165, 99);
+}
+
+header .icon-cancel {
+    font-size: 1.3rem;
+    color: var(--subtitle);
+    transition: 0.03s;
+}
+
+header .icon-cancel:hover {
+    font-size: 1.5rem;
+    color: crimson;
+    /* rotate: 180deg; */ 
+ }
+
+/* ================
+   Media Query
+=================== */
 
 @media (max-width: 700px){
     header.flex nav{

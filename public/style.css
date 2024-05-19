@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('fonts/icomoon.eot?owivg3');
-  src:  url('fonts/icomoon.eot?owivg3#iefix') format('embedded-opentype'),
-    url('fonts/icomoon.ttf?owivg3') format('truetype'),
-    url('fonts/icomoon.woff?owivg3') format('woff'),
-    url('fonts/icomoon.svg?owivg3#icomoon') format('svg');
+  src:  url('fonts/icomoon.eot?pppp51');
+  src:  url('fonts/icomoon.eot?pppp51#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?pppp51') format('truetype'),
+    url('fonts/icomoon.woff?pppp51') format('woff'),
+    url('fonts/icomoon.svg?pppp51#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,12 +25,45 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-menu:before {
-  content: "\e900";
+.icon-cancel:before {
+  content: "\e90a";
+}
+.icon-link:before {
+  content: "\e9cb";
+}
+.icon-arrow-right:before {
+  content: "\ea34";
+}
+.icon-instagram:before {
+  content: "\ea92";
 }
 .icon-close:before {
+  content: "\e907";
+}
+.icon-menu:before {
+  content: "\e908";
+}
+.icon-mail-envelope-closed:before {
+  content: "\e900";
+}
+.icon-sun:before {
   content: "\e901";
 }
-.icon-moon-o:before {
+.icon-arrow_forward:before {
   content: "\e902";
+}
+.icon-keyboard_arrow_up:before {
+  content: "\e903";
+}
+.icon-verified:before {
+  content: "\e904";
+}
+.icon-github:before {
+  content: "\e905";
+}
+.icon-moon-o:before {
+  content: "\e909";
+}
+.icon-linkedin-square:before {
+  content: "\e906";
 }
