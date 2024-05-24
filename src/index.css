@@ -83,6 +83,13 @@ button:active{
     scale: 0.95;
 }
 
+@media (max-width: 1000px){
+    .container {
+        width: 90%;
+        padding: 0 1.7rem;
+    }
+}
+
 @media (max-width: 500px){
     .container {
         width: 98%;

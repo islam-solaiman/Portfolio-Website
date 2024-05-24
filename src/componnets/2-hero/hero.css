@@ -1,4 +1,17 @@
 
+/* ================
+   Left Section
+=================== */
+
+section .hero{
+    margin-top: 3rem;
+}
+
+section.hero .parent-avatar.flex{
+    align-items: end;
+    gap: 0.6rem;
+}
+
 section.hero .left-section {
     flex-grow: 1;
 }
@@ -6,6 +19,7 @@ section.hero .left-section {
 section.hero .icon-verified{
     color: var(--blue);
     font-size: 1.1rem;
+    margin-bottom: 0.3rem;
 }
 
 section.hero .avatar{
@@ -14,5 +28,36 @@ section.hero .avatar{
     border: 1px solid rgb(243, 104, 11);
     padding: 1px;
     box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
-    margin-right: 1.6rem;
+}
+
+
+/* ============================
+   Right Section - Animation 
+============================= */
+
+section.hero h3.title{
+    font-size: 2.85rem;
+    line-height: 3.3rem;
+    margin: 24px 0;
+    color: var(--title);
+}
+
+section.hero p.sub-title{
+    color: var(--subtitle);
+    font-size: 0.9rem;
+    line-height: 1.65rem;
+    margin-bottom: 32px;
+}
+
+section.hero .all-icons{
+    font-size: 1.2rem;
+    gap: 1.5rem;
+    color: var(--subtitle);
+}
+
+section.hero .all-icons .icon:hover{
+    font-size: 1.3rem;
+    transition: 0.3s;
+    cursor: pointer;
+    color: var(--icone-hover);
 }
