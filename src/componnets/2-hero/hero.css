@@ -1,5 +1,5 @@
 /* ================
-        Contnts 
+        Contents 
 =================== */
 /*
 
@@ -14,7 +14,7 @@ section .hero{
 
 
 /* ================
-   Left Section
+   1- Left Section
 =================== */
 
 section.hero .parent-avatar.flex{
@@ -67,6 +67,6 @@ section.hero .all-icons .icon:hover{
     color: var(--icon-hover);
 }
 
-/* ============================
-   Right Section - Animation 
-============================= */
+/* ===============================
+   2- Right Section - Animation 
+================================ */
