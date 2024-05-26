@@ -22,10 +22,11 @@ export default function Main() {
             <p className='sub-title'>
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard 
             </p>
-            <div className='flex'>
-              <div></div>
-              <div className='icon-link'></div>
-              <div className='icon-github'></div>
+            <div className='flex icons'>
+              <div style={{gap: "11px"}} className='flex'>
+                <div className='icon-link'></div>
+                <div className='icon-github'></div>
+              </div>
               <a href="#">
                 More
                 <span className='icon-arrow_forward'></span>
