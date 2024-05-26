@@ -11,7 +11,7 @@ export default function Hero() {
         </div>
         <h3 className='title'>Islam Solaiman,</h3>
         <h3 className='title'>Software Enginer</h3>
-        <p className='sub-title'>Diploma In Software Enigineering from Alx Afric</p>
+        <p className='sub-title'>I'm islam Solaiman, i have diploma In Software Enigineering from Alx Afric</p>
         <div className='all-icons flex'>
           <div className='icon icon-linkedin-square'></div>
           <div className='icon icon-github'></div>
@@ -19,7 +19,7 @@ export default function Hero() {
         </div>
       </div>
       <div className='right-section border'>
-        aff
+        Animation
       </div>
     </section>
   )

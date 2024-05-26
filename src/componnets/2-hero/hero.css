@@ -1,11 +1,21 @@
-
 /* ================
-   Left Section
+        Contnts 
 =================== */
+/*
+
+1- Left Section
+2- Righ Section => Animation 
+
+*/
 
 section .hero{
     margin-top: 3rem;
 }
+
+
+/* ================
+   Left Section
+=================== */
 
 section.hero .parent-avatar.flex{
     align-items: end;
@@ -30,11 +40,6 @@ section.hero .avatar{
     box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.586) inset;
 }
 
-
-/* ============================
-   Right Section - Animation 
-============================= */
-
 section.hero h3.title{
     font-size: 2.85rem;
     line-height: 3.3rem;
@@ -50,14 +55,18 @@ section.hero p.sub-title{
 }
 
 section.hero .all-icons{
-    font-size: 1.2rem;
+    font-size: 1.3rem;
     gap: 1.5rem;
     color: var(--subtitle);
 }
 
 section.hero .all-icons .icon:hover{
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     transition: 0.3s;
     cursor: pointer;
-    color: var(--icone-hover);
+    color: var(--icon-hover);
 }
+
+/* ============================
+   Right Section - Animation 
+============================= */
