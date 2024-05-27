@@ -57,6 +57,10 @@ main section.right-section{
    /* flex-grow: 1; */
 }
 
+.card{
+        border: 1px solid rgba(93, 188, 252. 0.03);
+}
+
 .card .box{
         padding: 1rem 0.4rem;
 }
@@ -79,4 +83,16 @@ main section.right-section{
 .card .icon-link, .card .icon-github{
         font-size: 1.2rem;
         color: var(--subtitle);
+}
+
+.card .icon-link:hover, .card .icon-github:hover{
+        font-size: 1.25rem;
+        color: var(--icon-hover);
+        cursor: pointer;
+}
+
+.card a.link{
+        font-size: 0.9rem;
+        color: var(--blue);
+        margin-right: 12px;
 }

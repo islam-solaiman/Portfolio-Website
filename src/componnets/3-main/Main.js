@@ -12,10 +12,10 @@ export default function Main() {
         <button>NodeJs & Express</button>
       </section>
 
-      <section className='border right-section'>
+      <section className='right-section'>
         <article className='card'>
           <img src='' alt=''/>
-          <div style={{width:"266px"}} className='border box'>
+          <div style={{width:"266px"}} className='box'>
             <h1 classname='title'>
               My Gallery
             </h1>
@@ -27,9 +27,9 @@ export default function Main() {
                 <div className='icon-link'></div>
                 <div className='icon-github'></div>
               </div>
-              <a href="#">
+              <a className='link flex' href="#" >
                 More
-                <span className='icon-arrow_forward'></span>
+                <span style={{alignSelf: "end"}} className='icon-arrow_forward'></span>
               </a>
             </div>
           </div>
