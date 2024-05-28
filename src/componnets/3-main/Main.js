@@ -14,7 +14,7 @@ export default function Main() {
 
       <section className='right-section'>
         <article className='card'>
-          <img src='' alt=''/>
+          <img src='./1.jpg' alt=''/>
           <div style={{width:"266px"}} className='box'>
             <h1 classname='title'>
               My Gallery
