@@ -8,19 +8,23 @@ export default function Contact() {
         <span className='icon-mail-envelope-closed'></span>
         Contact Us
       </h1>
-      <p>Contact us for more information , and get notified when i publish something new</p>
+      <p className='sub-title'>Contact us for more information , and get notified when i publish something new</p>
 
       <div className='flex'>
-        <form className='border'>
-          <lable htmlFor='email'>Email Address: </lable>
-          <input type='email' id='email'></input>
+        <form>
+          <div className='flex'>
+            <lable htmlFor='email'>Email Address:</lable>
+            <input  required type='email' id='email'></input>
+          </div>
 
-          <lable htmlFor='message'>Your Message: </lable>
-          <textarea type='message' id='message'></textarea>
+          <div className='flex' style={{marginTop: "24px"}}>
+            <lable htmlFor='message'>Your Message:</lable>
+            <textarea required type='message' id='message'></textarea>
+          </div>
 
-          <button>Submit</button>
+          <button className='submit'>Submit</button>
         </form>
-          <div className='border animation'>Animation</div>
+          <div className='border animation'></div>
       </div>
     </section>
 
