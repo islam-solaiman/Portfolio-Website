@@ -24,7 +24,7 @@ export default function Contact() {
 
           <button className='submit'>Submit</button>
         </form>
-          <div className='border animation'></div>
+          <div className='border animation'>Animation</div>
       </div>
     </section>
 

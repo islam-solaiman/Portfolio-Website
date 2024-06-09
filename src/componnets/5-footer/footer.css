@@ -1,0 +1,8 @@
+
+footer.flex{
+    justify-content: space-between;
+}
+
+footer.flex ul.flex{
+    gap: 1rem;
+}
