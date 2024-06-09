@@ -12,9 +12,9 @@ export default function Main() {
         <button>NodeJs & Express</button>
       </section>
 
-      <section className='right-section'>
+      <section className='flex right-section'>
 
-      {["a", "b", "c"].map((item) => {
+      {["a", "b", "c", 1, 2].map((item) => {
   return (
     <article className='card'>
     <img src='./1.jpg' alt=''/>
