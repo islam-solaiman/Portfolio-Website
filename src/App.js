@@ -7,7 +7,7 @@ import Footer from "./componnets/5-footer/Footer";
 
 
 function App() {
-  return <div className="container">
+  return <div id="up" className="container">
     <Header />
     <div className="devider"/>
     <Hero />
@@ -17,6 +17,10 @@ function App() {
     <Contact />
     <div className="devider"/>
     <Footer />
+
+    <a href="#up">
+     <button className="icon-keyboard_arrow_up scroll2top"></button>
+    </a>
   </div>
 }
 

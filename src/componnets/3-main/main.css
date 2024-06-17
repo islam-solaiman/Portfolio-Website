@@ -1,10 +1,10 @@
 /* ================
-        Contents 
-=================== */
-/*
+     Contents 
+=================== 
 
 1- Left Section - Buttons
 2- Right Sectin - Cards
+3- Responsive Design (Media query)
 
 */
 
@@ -79,8 +79,9 @@ main section.right-section.flex{
 }
 
 .card img{
-      width: 300px;
-      height: 200px;
+        border-radius: 5px;
+      width: 100%;  /*  to remove later*/
+      height: 180px;  /*  to remove later  */ 
 }
 
 .card .box{
@@ -123,7 +124,7 @@ main section.right-section.flex{
    Responsive Design (Media query)
 ==================================== */
 
-@media(max-width:600px){
+@media(max-width:681px){
         main.flex {
                 flex-direction: column;
                 align-items: center;
