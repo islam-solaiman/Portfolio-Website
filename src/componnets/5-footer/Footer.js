@@ -10,7 +10,7 @@ export default function Footer() {
         <li><a href=''>Speaking</a></li>
         <li><a href=''>Uses</a></li>
       </ul>
-      <p>&copy; 2024 Islam Solaiman  All rights reserved</p>
+      <p>&copy; 2024 Islam Solaiman  all rights reserved</p>
     </footer>
   )
 }
