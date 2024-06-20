@@ -3,22 +3,28 @@ import  './main.css'
 
 
 const myProjects = [{
-  title: "first project",
+  title: "HTML Project",
   category: ["HTML & CSS"],
   imgPath: "./1.jpg", 
   summery: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
   },
   {
-    title: "Second project",
+    title: "HTML And Javascript project",
     category: ["HTML & CSS", "javaScript"],
     imgPath: "./1.jpg", 
     summery: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
   },
   {
-    title: "Third project",
+    title: "JavaScript project",
     category: ["javaScript"],
     imgPath: "./1.jpg", 
     summery: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
+  },
+  {
+  title: "React project",
+  category: ["React & MUI"],
+  imgPath: "./1.jpg", 
+  summery: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
   },
 ];
 
@@ -47,7 +53,14 @@ export default function Main() {
             return categ_item[0] === "javaScript"
           })
           setArr(newArr)}} className={isActive === "option2" ? "active" : ""}>JavaScript</button>
-        <button onClick={()=>{setIsActive("option3"); setArr()}} className={isActive === "option3" ? "active" : ""}>React & MUI</button>
+        <button onClick={()=>{setIsActive("option3");const newArr = myProjects.filter((item) => {
+            const categ_item = item.category.filter((i) => {
+               
+              return i === "React & MUI"}
+          )
+            return categ_item[0] === "React & MUI"
+          })
+          setArr(newArr)}} className={isActive === "option3" ? "active" : ""}>React & MUI</button>
         <button onClick={()=>{setIsActive("option4"); setArr()}} className={isActive === "option4" ? "active" : ""}>NodeJs & Express</button>
       </section>
 
