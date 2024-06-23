@@ -10,58 +10,57 @@ const myProjects = [{
   },
   {
     title: "HTML And Javascript project",
-    category: ["HTML & CSS", "javaScript"],
+    category: ["HTML & CSS", "JavaScript"],
     imgPath: "./1.jpg", 
     summery: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
   },
   {
     title: "JavaScript project",
-    category: ["javaScript"],
+    category: ["JavaScript"],
     imgPath: "./1.jpg", 
     summery: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
   },
   {
   title: "React project",
-  category: ["React & MUI"],
+  category: ["React"],
   imgPath: "./1.jpg", 
   summery: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
   },
+  {
+    title: "NodeJs project",
+    category: ["NodeJs & Express"],
+    imgPath: "./1.jpg", 
+    summery: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard ",
+    },
 ];
+
 
 export default function Main() {
   const [isActive, setIsActive] = useState("all");
   const [arr, setArr] = useState(myProjects);
 
+  const  handleClick = (buttonCategory) => {
+    setIsActive(buttonCategory); 
+      const newArr = myProjects.filter((item) => {
+        const categ_item = item.category.filter((i) => {
+           
+          return i === buttonCategory}
+      )
+        return categ_item[0] === buttonCategory
+      })
+      setArr(newArr);
+    }
+
   return (
     <main className='flex'>
       <section className='flex left-section'>
-        <button onClick={()=>setIsActive("all")} className={isActive === "all"? "active" : ""}>All Projects</button>
-        <button onClick={()=>{setIsActive("option1"); 
-          const newArr = myProjects.filter((item) => {
-            const categ_item = item.category.filter((i) => {
-            return i === "HTML & CSS"
-          })
-            return categ_item[0] === "HTML & CSS"
-          })
-          setArr(newArr)}} className={isActive === "option1" ? "active" : ""}>HTML & CSS</button>
-        <button onClick={()=>{setIsActive("option2"); 
-          const newArr = myProjects.filter((item) => {
-            const categ_item = item.category.filter((i) => {
-               
-              return i === "javaScript"}
-          )
-            return categ_item[0] === "javaScript"
-          })
-          setArr(newArr)}} className={isActive === "option2" ? "active" : ""}>JavaScript</button>
-        <button onClick={()=>{setIsActive("option3");const newArr = myProjects.filter((item) => {
-            const categ_item = item.category.filter((i) => {
-               
-              return i === "React & MUI"}
-          )
-            return categ_item[0] === "React & MUI"
-          })
-          setArr(newArr)}} className={isActive === "option3" ? "active" : ""}>React & MUI</button>
-        <button onClick={()=>{setIsActive("option4"); setArr()}} className={isActive === "option4" ? "active" : ""}>NodeJs & Express</button>
+        <button onClick={()=>{setIsActive("all"); setArr(myProjects)}} className={isActive === "all"? "active" : ""}>All Projects</button>
+        <button onClick={()=> handleClick("HTML & CSS")} 
+          className={isActive === "HTML & CSS" ? "active" : ""}>HTML & CSS</button>
+        <button onClick={()=> handleClick("JavaScript")} 
+        className={isActive === "JavaScript" ? "JavaScript" : ""}>JavaScript</button>
+        <button onClick={()=> handleClick("React")} className={isActive === "React" ? "active" : ""}>React</button>
+        <button onClick={()=> handleClick("NodeJs & Express")} className={isActive === "NodeJs & Express" ? "active" : ""}>NodeJs & Express</button>
       </section>
 
       <section className='flex right-section'>
