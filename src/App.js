@@ -4,9 +4,20 @@ import Header from "./componnets/1-header/Header";
 import Main from "./componnets/3-main/Main";
 import Contact from "./componnets/4-contact/Contact";
 import Footer from "./componnets/5-footer/Footer";
+import { useEffect, useState } from "react";
 
 
 function App() {
+
+  useEffect(()=> {
+    window.addEventListener("scroll", () => {
+      if (window.scrollY > 300) setShowScrollBtn(true);
+      else setShowScrollBtn(false)
+    }
+    )
+  }, [])
+
+  const [showScrollBtn, setShowScrollBtn] = useState(false);
   return <div id="up" className="container">
     <Header />
     <div className="devider"/>
@@ -18,9 +29,9 @@ function App() {
     <div className="devider"/>
     <Footer />
 
-    <a href="#up">
+    {showScrollBtn &&     <a href="#up" style={{opacity: true? </a>, transition: "3s"}}>
      <button className="icon-keyboard_arrow_up scroll2top"></button>
-    </a>
+    </a>}
   </div>
 }
 
