@@ -29,9 +29,9 @@ function App() {
     <div className="devider"/>
     <Footer />
 
-    {showScrollBtn &&     <a href="#up" style={{opacity: true? </a>, transition: "3s"}}>
+    <a href="#up"style={{opacity: showScrollBtn? 1 : 0 , transition: "3s"}}>
      <button className="icon-keyboard_arrow_up scroll2top"></button>
-    </a>}
+    </a>
   </div>
 }
 
