@@ -1,9 +1,16 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import   './header.css'
 
 
 export default function Header() {
   const [showModel, setShowModel] = useState(false);
+  const [theme, setTheme] = useState("dark");
+
+  useEffect (() => {
+
+    theme === 'light' ? 
+    document.body.classList.add('light') :  document.body.classList.add('dark');
+  }, [theme])
   return (
     <div>
       <header className=' flex'>
@@ -19,7 +26,9 @@ export default function Header() {
           </ul>
         </nav>
 
-        <button className='mode flex'>
+        <button className='mode flex' onClick={() => {
+          setTheme("light");
+        }}>
           <span className='icon-moon-o'></span>
         </button>
         {showModel && 
