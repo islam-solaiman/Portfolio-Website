@@ -40,7 +40,7 @@ export default function Header() {
           // Get value from LS
           setTheme(localStorage.getItem("currentMode"));
         }}>
-          <span className='icon-moon-o'></span>
+          <span className= {theme === 'dark' ? 'icon-moon-o' : 'icon-sun'} ></span>
         </button>
         {showModel && 
         <div className='fixed'>
