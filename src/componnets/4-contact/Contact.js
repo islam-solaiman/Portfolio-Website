@@ -1,6 +1,9 @@
 import React from "react";
 import "./contact.css";
 import { useForm, ValidationError } from "@formspree/react";
+import Lottie from "lottie-react";
+import doneAnimation from "../../animation/done.json";
+import contactAnimation from "../../animation/contact.json";
 
 export default function Contact() {
   const [state, handleSubmit] = useForm("xgvwvvkr");
@@ -15,11 +18,17 @@ export default function Contact() {
         something new
       </p>
 
-      <div className="flex">
+      <div className="flex" style={{ justifyContent: "space-between" }}>
         <form onSubmit={handleSubmit}>
           <div className="flex">
             <lable htmlFor="email">Email Address:</lable>
-            <input autoComplete="off" required type="email" id="email" name="email"></input>
+            <input
+              autoComplete="off"
+              required
+              type="email"
+              id="email"
+              name="email"
+            ></input>
             <ValidationError
               prefix="Email"
               field="email"
@@ -46,9 +55,26 @@ export default function Contact() {
             {state.submitting ? "Submitting ..." : "Submit"}
           </button>
 
-          {state.succeeded && (<p style={{fontSize: '16px', marginTop: '1.7rem'}}>Your Message has been sent successfuly 👌</p>)}
+          {state.succeeded && (
+            <p
+              className="flex"
+              style={{ fontSize: "16px", marginTop: "1.7rem" }}
+            >
+              <Lottie
+                loop={false}
+                style={{ height: 37 }}
+                animationData={doneAnimation}
+              />
+              Your Message has been sent successfuly 👌
+            </p>
+          )}
         </form>
-        <div className="border animation">Animation</div>
+        <div className=" animation">
+          <Lottie className="contact-animation"
+            style={{ height: 355 }}
+            animationData={contactAnimation}
+          />
+        </div>
       </div>
     </section>
   );

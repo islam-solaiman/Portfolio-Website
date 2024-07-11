@@ -1,9 +1,11 @@
 import React from 'react'
 import  './hero.css'
+import Lottie from "lottie-react";
+import developerAnimation from "../../animation/developer1.json";
 
 export default function Hero() {
   return (
-    <section className='hero flex'>
+    <section className='hero flex' >
       <div className='left-section '>
         <div className='parent-avatar flex'>
           <img src="./me.png" className="avatar" alt="me"/>
@@ -18,8 +20,10 @@ export default function Hero() {
           <div className='icon icon-instagram'></div>
         </div>
       </div>
-      <div className='right-section border'>
-        Animation
+      <div className='right-section animation'>
+            <Lottie 
+            animationData={developerAnimation}
+          />
       </div>
     </section>
   )

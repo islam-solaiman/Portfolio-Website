@@ -80,6 +80,13 @@ section.contact-us .submit:hover {
    Responsive Design (Media query)
 ==================================== */
 
+
+@media (max-width: 1250px) {
+  section.contact-us .contact-animation {
+    display: none;
+  }
+}
+
 @media (max-width: 600px) {
   .animation {
     display: none;
