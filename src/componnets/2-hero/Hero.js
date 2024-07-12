@@ -35,7 +35,7 @@ export default function Hero() {
         </p>
         <div className="all-icons flex">
           <div className="icon icon-linkedin-square"></div>
-          <div className="icon icon-github"></div>
+          <a href=""><div className="icon icon-github"></div></a>
           <div className="icon icon-instagram"></div>
         </div>
       </div>
