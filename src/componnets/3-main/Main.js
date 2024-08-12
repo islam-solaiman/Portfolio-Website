@@ -77,7 +77,7 @@ export default function Main() {
                       <div className="icon-github"></div>
                     </div>
                     <a className="link flex" href={item.link}>
-                      More
+                      <a href={item.link}>Link</a>
                       <span
                         style={{ alignSelf: "end" }}
                         className="icon-arrow_forward"
