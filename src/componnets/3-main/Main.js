@@ -74,7 +74,9 @@ export default function Main() {
                   <div className="flex icons">
                     <div style={{ gap: "11px" }} className="flex">
                       <div className="icon-link"></div>
-                      <div className="icon-github"></div>
+                      <a href={item.github}>
+                        <div className="icon-github"></div>
+                      </a>
                     </div>
                     <a className="link flex" href={item.link}>
                       <a href={item.link}>Link</a>

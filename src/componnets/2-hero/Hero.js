@@ -30,8 +30,7 @@ export default function Hero() {
           Islam Solaiman, Software Engineer
         </motion.h3>
         <p className="sub-title">
-          I'm islam Solaiman, i have diploma In Software Enigineering from Alx
-          Afric
+          Full Stack Software Engineer,  Alx Africa
         </p>
         <div className="all-icons flex">
           <div className="icon icon-linkedin-square"></div>
