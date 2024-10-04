@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import   './header.css'
+import { HashLink as Link } from 'react-router-hash-link';
 
 
 export default function Header() {
@@ -25,11 +26,10 @@ export default function Header() {
         <div/>
         <nav>
           <ul className='flex'>
-            <li><a href="">About</a></li>
-            <li><a href="">Articles</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Speaking</a></li>
-            <li><a href="">Contact</a></li>
+            <li><Link to="#about">About</Link></li>
+            <li><Link to="#projects">Projects</Link></li>
+            <li><Link to="#skills">Skills</Link></li>
+            <li><Link to="#contact">Contact</Link></li>
           </ul>
         </nav>
 
@@ -46,11 +46,10 @@ export default function Header() {
         <div className='fixed'>
           <ul className='model'>
             <li className='icon-cancel' onClick={() => setShowModel(false)} />
-            <li><a href="">About</a></li>
-            <li><a href="">Articles</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Speaking</a></li>
-            <li><a href="">Contact</a></li>
+            <li onClick={() => setShowModel(false)}><Link to="#about">About</Link></li>
+            <li onClick={() => setShowModel(false)}><Link to="#projects">Projects</Link></li>
+            <li onClick={() => setShowModel(false)}><Link to="#skills">Skills</Link></li>
+            <li onClick={() => setShowModel(false)}><Link to="#contact">Contact</Link></li>
           </ul>
         </div>
         }

@@ -27,15 +27,23 @@ export default function Hero() {
           transition={{ duration: 2 }}
           className="title"
         >
-          Islam Solaiman, Software Engineer
+          Islam  Solaiman,
+          <h6 style={{fontSize: "25px"}}
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 2 }}
+        >
+          Full Stack Web Developer
+        </h6>
         </motion.h3>
+
         <p className="sub-title">
-          Full Stack Software Engineer,  Alx Africa
+          Software Engineering Program,  Alx Africa
         </p>
         <div className="all-icons flex">
-          <div className="icon icon-linkedin-square"></div>
-          <a href=""><div className="icon icon-github"></div></a>
-          <div className="icon icon-instagram"></div>
+          <a href="https://www.linkedin.com/in/islam-solaiman/"><div className="icon icon-linkedin-square"></div></a>
+          <a href="https://github.com/islam-solaiman"><div className="icon icon-github"></div></a>
+          <a href="https://www.instagram.com/islam_.solaiman/"><div className="icon icon-instagram"></div></a>
         </div>
       </div>
       <div className="right-section animation">

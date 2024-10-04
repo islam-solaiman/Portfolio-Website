@@ -46,6 +46,7 @@ section.hero h3.title{
     line-height: 3.3rem;
     margin: 24px 0;
     color: var(--title);
+    min-width: 360px;
 }
 
 section.hero p.sub-title{
@@ -74,7 +75,7 @@ section.hero .all-icons .icon:hover{
 
 .animation {
     width: 80%;
-    translate: 100px 55px;
+    translate: 100px 30px;
 }
 
 
